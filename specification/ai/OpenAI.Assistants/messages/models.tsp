@@ -14,12 +14,11 @@ model ThreadInitializationMessage {
   content: string;
 
   @encodedName("application/json", "file_ids")
-  @doc("""
+  @doc(""" 
   A list of file IDs that the assistant should use. Useful for tools like retrieval and code_interpreter that can
   access files.
   """)
   fileIds?: string[] = [];
-
   ...OptionalNullableMetadata;
 }
 
@@ -61,7 +60,6 @@ model ThreadMessage {
   access files.
   """)
   fileIds: string[];
-
   ...RequiredNullableMetadata;
 }
 
@@ -184,14 +182,6 @@ model MessageTextFilePathDetails {
 model MessageImageFileDetails {
   @encodedName("application/json", "file_id")
   @doc("The ID for the file associated with this image.")
-  fileId: MessageImageFileIdDetails;
-}
-
-@doc("An encapsulation of an image file ID, as used by message image content.")
-@added(ServiceApiVersions.v2024_02_15_preview)
-model MessageImageFileIdDetails {
-  @doc("The ID of the specific image file.")
-  @encodedName("application/json", "file_id")
   fileId: string;
 }
 
