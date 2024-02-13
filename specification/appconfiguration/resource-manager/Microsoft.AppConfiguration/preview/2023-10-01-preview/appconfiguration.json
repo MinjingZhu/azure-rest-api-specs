@@ -24,10 +24,10 @@
         "operationId": "ConfigurationStores_List",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "$skipToken",
@@ -70,13 +70,13 @@
         "operationId": "ConfigurationStores_ListByResourceGroup",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "$skipToken",
@@ -119,16 +119,16 @@
         "operationId": "ConfigurationStores_Get",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -159,16 +159,16 @@
         "operationId": "ConfigurationStores_Create",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "configStoreCreationParameters",
@@ -212,6 +212,9 @@
           },
           "ConfigurationStores_Create_With_Data_Plane_Proxy": {
             "$ref": "./examples/ConfigurationStoresCreateWithDataPlaneProxy.json"
+          },
+          "ConfigurationStores_Create_With_Telemetry_And_Experimentation": {
+            "$ref": "./examples/ConfigurationStoresCreateWithTelemetryAndExperimentation.json"
           }
         },
         "x-ms-long-running-operation": true
@@ -224,16 +227,16 @@
         "operationId": "ConfigurationStores_Delete",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -268,16 +271,16 @@
         "operationId": "ConfigurationStores_Update",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "configStoreUpdateParameters",
@@ -332,10 +335,10 @@
         "operationId": "Operations_CheckNameAvailability",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "checkNameAvailabilityParameters",
@@ -380,16 +383,16 @@
         "operationId": "ConfigurationStores_ListKeys",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "$skipToken",
@@ -432,16 +435,16 @@
         "operationId": "ConfigurationStores_RegenerateKey",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "regenerateKeyParameters",
@@ -483,7 +486,7 @@
         "operationId": "Operations_List",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "$skipToken",
@@ -526,16 +529,16 @@
         "description": "Lists all private endpoint connections for a configuration store.",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -571,16 +574,16 @@
         "description": "Gets the specified private endpoint connection associated with the configuration store.",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "privateEndpointConnectionName",
@@ -618,16 +621,16 @@
         "description": "Update the state of the specified private endpoint connection associated with the configuration store. This operation cannot be used to create a private endpoint connection. Private endpoint connections must be created with the Network resource provider.",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "privateEndpointConnectionName",
@@ -681,16 +684,16 @@
         "operationId": "PrivateEndpointConnections_Delete",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "privateEndpointConnectionName",
@@ -734,16 +737,16 @@
         "description": "Gets the private link resources that need to be created for a configuration store.",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           }
         ],
         "responses": {
@@ -779,16 +782,16 @@
         "description": "Gets a private link resource that need to be created for a configuration store.",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "groupName",
@@ -828,16 +831,16 @@
         "operationId": "KeyValues_Get",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "keyValueName",
@@ -875,16 +878,16 @@
         "operationId": "KeyValues_CreateOrUpdate",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "keyValueName",
@@ -931,16 +934,16 @@
         "operationId": "KeyValues_Delete",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "keyValueName",
@@ -984,10 +987,10 @@
         "description": "Gets information about the deleted configuration stores in a subscription.",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           }
         ],
         "responses": {
@@ -1023,10 +1026,10 @@
         "description": "Gets a deleted Azure app configuration store.",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
             "$ref": "#/parameters/LocationParameter"
@@ -1066,10 +1069,10 @@
         "description": "Permanently deletes the specified configuration store.",
         "parameters": [
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
             "$ref": "#/parameters/LocationParameter"
@@ -1111,13 +1114,13 @@
         "operationId": "Operations_RegionalCheckNameAvailability",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
             "$ref": "#/parameters/LocationParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "checkNameAvailabilityParameters",
@@ -1162,16 +1165,16 @@
         "operationId": "Replicas_ListByConfigurationStore",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "$skipToken",
@@ -1214,16 +1217,16 @@
         "operationId": "Replicas_Get",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "replicaName",
@@ -1262,16 +1265,16 @@
         "operationId": "Replicas_Create",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "replicaName",
@@ -1328,16 +1331,16 @@
         "operationId": "Replicas_Delete",
         "parameters": [
           {
-            "$ref": "#/parameters/SubscriptionIdParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/ResourceGroupNameParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
           },
           {
             "$ref": "#/parameters/ConfigStoreNameParameter"
           },
           {
-            "$ref": "#/parameters/ApiVersionParameter"
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
           },
           {
             "name": "replicaName",
@@ -1487,6 +1490,149 @@
           "final-state-via": "azure-async-operation"
         }
       }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AppConfiguration/configurationStores/{configStoreName}/networkSecurityPerimeterConfigurations": {
+      "get": {
+        "tags": [
+          "NetworkSecurityPerimeterConfigurations"
+        ],
+        "operationId": "NetworkSecurityPerimeterConfigurations_ListByConfigurationStore",
+        "description": "Lists all network security perimeter configurations for a configuration store.",
+        "parameters": [
+          {
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
+          },
+          {
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "$ref": "#/parameters/ConfigStoreNameParameter"
+          },
+          {
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The request was successful; the request was well-formed and received properly.",
+            "schema": {
+              "$ref": "#/definitions/NetworkSecurityPerimeterConfigurationListResult"
+            }
+          },
+          "default": {
+            "description": "Error response describing why the operation failed",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "NetworkSecurityPerimeterConfiguration_List": {
+            "$ref": "./examples/ConfigurationStoresListNetworkSecurityPerimeterConfigurations.json"
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AppConfiguration/configurationStores/{configStoreName}/networkSecurityPerimeterConfigurations/{nspConfigurationName}": {
+      "get": {
+        "tags": [
+          "NetworkSecurityPerimeterConfigurations"
+        ],
+        "operationId": "NetworkSecurityPerimeterConfigurations_Get",
+        "description": "Gets the specified network security perimeter configuration associated with the configuration store.",
+        "parameters": [
+          {
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
+          },
+          {
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "$ref": "#/parameters/ConfigStoreNameParameter"
+          },
+          {
+            "$ref": "#/parameters/NSPConfigurationNameParameter"
+          },
+          {
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The request was successful; the request was well-formed and received properly.",
+            "schema": {
+              "$ref": "#/definitions/NetworkSecurityPerimeterConfiguration"
+            }
+          },
+          "default": {
+            "description": "Error response describing why the operation failed",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "NetworkSecurityPerimeterConfiguration_GetConfiguration": {
+            "$ref": "./examples/ConfigurationStoresGetNetworkSecurityPerimeterConfiguration.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.AppConfiguration/configurationStores/{configStoreName}/networkSecurityPerimeterConfigurations/{nspConfigurationName}/reconcile": {
+      "post": {
+        "tags": [
+          "NetworkSecurityPerimeterConfigurations"
+        ],
+        "operationId": "NetworkSecurityPerimeterConfigurations_Reconcile",
+        "description": "Forces a refresh of the specified network security perimeter configuration.",
+        "parameters": [
+          {
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/SubscriptionIdParameter"
+          },
+          {
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "$ref": "#/parameters/ConfigStoreNameParameter"
+          },
+          {
+            "$ref": "#/parameters/NSPConfigurationNameParameter"
+          },
+          {
+            "$ref": "../../../../../common-types/resource-management/v5/types.json#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "The request was successful; the operation will complete asynchronously.",
+            "headers": {
+              "Azure-AsyncOperation": {
+                "description": "URL to query for status of the operation.",
+                "type": "string"
+              },
+              "Location": {
+                "description": "URL to query for the operation result",
+                "type": "string"
+              }
+            }
+          },
+          "default": {
+            "description": "Error response describing why the operation failed",
+            "schema": {
+              "$ref": "../../../../../common-types/resource-management/v5/types.json#/definitions/ErrorResponse"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "NetworkSecurityPerimeterConfiguration_Reconcile": {
+            "$ref": "./examples/ConfigurationStoresReconcileNetworkSecurityPerimeterConfiguration.json"
+          }
+        },
+        "x-ms-long-running-operation": true
+      }
     }
   },
   "definitions": {
@@ -1584,10 +1730,11 @@
           }
         },
         "publicNetworkAccess": {
-          "description": "Control permission for data plane traffic coming from public networks while private endpoint is enabled.",
+          "description": "Property to specify whether the data plane will accept traffic from the public internet.",
           "enum": [
             "Enabled",
-            "Disabled"
+            "Disabled",
+            "SecuredByPerimeter"
           ],
           "type": "string",
           "x-ms-enum": {
@@ -1629,6 +1776,14 @@
           "x-ms-mutability": [
             "create"
           ]
+        },
+        "telemetry": {
+          "$ref": "#/definitions/TelemetryProperties",
+          "description": "Property specifying the configuration of telemetry for this configuration store"
+        },
+        "experimentation": {
+          "$ref": "#/definitions/ExperimentationProperties",
+          "description": "Property specifying the configuration of experimentation for this configuration store"
         }
       }
     },
@@ -1774,7 +1929,8 @@
           "description": "Control permission for data plane traffic coming from public networks while private endpoint is enabled.",
           "enum": [
             "Enabled",
-            "Disabled"
+            "Disabled",
+            "SecuredByPerimeter"
           ],
           "type": "string",
           "x-ms-enum": {
@@ -1789,6 +1945,14 @@
         "dataPlaneProxy": {
           "$ref": "#/definitions/DataPlaneProxyProperties",
           "description": "Property specifying the configuration of data plane proxy for Azure Resource Manager (ARM)."
+        },
+        "telemetry": {
+          "$ref": "#/definitions/TelemetryProperties",
+          "description": "Property specifying the configuration of telemetry to update for this configuration store"
+        },
+        "experimentation": {
+          "$ref": "#/definitions/ExperimentationProperties",
+          "description": "Property specifying the configuration of experimentation to update for this configuration store"
         }
       }
     },
@@ -2815,24 +2979,310 @@
           "type": "string"
         }
       }
+    },
+    "NetworkSecurityPerimeterConfigurationListResult": {
+      "description": "A list of network security perimeter configurations",
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The collection value.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/NetworkSecurityPerimeterConfiguration"
+          },
+          "readOnly": true
+        },
+        "nextLink": {
+          "description": "The URI that can be used to request the next set of paged results.",
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "NetworkSecurityPerimeterConfiguration": {
+      "description": "A network security perimeter configuration",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "../../../../../common-types/resource-management/v5/types.json#/definitions/ProxyResource"
+        }
+      ],
+      "properties": {
+        "properties": {
+          "$ref": "#/definitions/NetworkSecurityPerimeterConfigurationProperties"
+        }
+      }
+    },
+    "NetworkSecurityPerimeterConfigurationProperties": {
+      "description": "The properties of a network security perimeter configuration.",
+      "type": "object",
+      "properties": {
+        "provisioningState": {
+          "description": "The provisioning status of the network security perimeter configuration.",
+          "enum": [
+            "Succeeded",
+            "Failed",
+            "Accepted",
+            "Creating",
+            "Updating",
+            "Deleting",
+            "Canceled"
+          ],
+          "type": "string",
+          "readOnly": true,
+          "x-ms-enum": {
+            "name": "NSPProvisioningState",
+            "modelAsString": true
+          }
+        },
+        "provisioningIssues": {
+          "description": "List of warnings and errors related to network security perimeter provisioning.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/NSPProvisioningIssue"
+          },
+          "x-ms-identifiers": [],
+          "readOnly": true
+        },
+        "networkSecurityPerimeter": {
+          "$ref": "#/definitions/NSPProperties"
+        },
+        "resourceAssociation": {
+          "$ref": "#/definitions/NSPResourceAssociation"
+        },
+        "profile": {
+          "$ref": "#/definitions/NSPProfile"
+        }
+      }
+    },
+    "NSPProvisioningIssue": {
+      "description": "A network security perimeter provisioning issue",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the provisioning issue",
+          "type": "string",
+          "readOnly": true
+        },
+        "properties": {
+          "$ref": "#/definitions/NSPProvisioningIssueProperties"
+        }
+      }
+    },
+    "NSPProperties": {
+      "description": "Properties of the network security perimeter",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Azure resource ID of the network security perimeter",
+          "type": "string",
+          "format": "arm-id",
+          "readOnly": true
+        },
+        "perimeterGuid": {
+          "description": "The network security perimeter GUID",
+          "type": "string",
+          "readOnly": true
+        },
+        "location": {
+          "description": "The geo-location of the network security perimeter",
+          "type": "string",
+          "readOnly": true
+        }
+      }
+    },
+    "NSPResourceAssociation": {
+      "description": "Properties of the related Resource Association",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the Resource Association",
+          "type": "string",
+          "readOnly": true
+        },
+        "accessMode": {
+          "description": "The access mode of the Resource Association",
+          "enum": [
+            "Learning",
+            "Enforced"
+          ],
+          "type": "string",
+          "readOnly": true,
+          "x-ms-enum": {
+            "name": "NSPResourceAssociationAccessMode",
+            "modelAsString": true
+          }
+        }
+      }
+    },
+    "NSPProfile": {
+      "description": "Properties of the related network profile",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the network profile",
+          "type": "string",
+          "readOnly": true
+        },
+        "accessRulesVersion": {
+          "description": "The access rules version number",
+          "type": "string",
+          "readOnly": true
+        },
+        "accessRules": {
+          "description": "List of access rules on the associated network profile",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/NSPProfileAccessRule"
+          },
+          "readOnly": true,
+          "x-ms-identifiers": []
+        },
+        "diagnosticSettingsVersion": {
+          "description": "The diagnostic settings version number",
+          "type": "string",
+          "readOnly": true
+        },
+        "enabledLogCategories": {
+          "description": "List of enabled log categories",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "readOnly": true,
+          "x-ms-identifiers": []
+        }
+      }
+    },
+    "NSPProvisioningIssueProperties": {
+      "description": "Properties of a network security perimeter provisioning issue",
+      "type": "object",
+      "properties": {
+        "issueType": {
+          "description": "The type of provisioning issue",
+          "type": "string",
+          "enum": [
+            "MissingPerimeterConfiguration",
+            "MissingIdentityConfiguration",
+            "ConfigurationPropagationFailure",
+            "Other"
+          ],
+          "x-ms-enum": {
+            "name": "NSPProvisioningIssueType",
+            "modelAsString": true
+          },
+          "readOnly": true
+        },
+        "severity": {
+          "description": "The severity of the provisioning issue",
+          "type": "string",
+          "readOnly": true,
+          "enum": [
+            "Warning",
+            "Error"
+          ],
+          "x-ms-enum": {
+            "name": "NSPProvisioningIssueSeverity",
+            "modelAsString": true
+          }
+        },
+        "description": {
+          "description": "The description of the provisioning issue",
+          "type": "string",
+          "readOnly": true
+        },
+        "suggestedResourceIds": {
+          "description": "List of IDs of Azure resources that can be associated to the same perimeter to remediate the issue",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "arm-id"
+          },
+          "readOnly": true,
+          "x-ms-identifiers": []
+        },
+        "suggestedAccessRules": {
+          "type": "array",
+          "description": "Access rules that can be added to the perimeter to remediate the issue",
+          "readOnly": true,
+          "items": {
+            "$ref": "#/definitions/NSPProfileAccessRule"
+          },
+          "x-ms-identifiers": []
+        }
+      }
+    },
+    "NSPProfileAccessRule": {
+      "description": "Details of an access rule on a network profile",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of the access rule",
+          "type": "string",
+          "readOnly": true
+        },
+        "properties": {
+          "$ref": "#/definitions/NSPAccessRuleProperties"
+        }
+      }
+    },
+    "NSPAccessRuleProperties": {
+      "description": "Properties of an access rule on a network profile",
+      "type": "object",
+      "properties": {
+        "direction": {
+          "description": "The direction of the access rule",
+          "enum": [
+            "Inbound",
+            "Outbound"
+          ],
+          "x-ms-enum": {
+            "name": "AccessRuleDirection",
+            "modelAsString": true
+          },
+          "type": "string",
+          "readOnly": true
+        },
+        "addressPrefixes": {
+          "description": "List of IPv4 or IPv6 address prefixes granted access",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "readOnly": true,
+          "x-ms-identifiers": []
+        }
+      }
+    },
+    "TelemetryProperties": {
+      "description": "Telemetry settings",
+      "type": "object",
+      "properties": {
+        "resourceId": {
+          "description": "Resource ID of a resource enabling telemetry collection",
+          "type": "string",
+          "format": "arm-id"
+        }
+      }
+    },
+    "ExperimentationProperties": {
+      "description": "Experimentation settings",
+      "type": "object",
+      "properties": {
+        "resourceId": {
+          "description": "Resource ID of a resource enabling experimentation",
+          "type": "string",
+          "format": "arm-id"
+        },
+        "dataPlaneEndpoint": {
+          "description": "The data plane endpoint of the Split experimentation workspace resource where experimentation data can be retrieved",
+          "type": "string",
+          "format": "uri"
+        }
+      }
     }
   },
   "parameters": {
-    "SubscriptionIdParameter": {
-      "name": "subscriptionId",
-      "in": "path",
-      "description": "The Microsoft Azure subscription ID.",
-      "required": true,
-      "type": "string"
-    },
-    "ResourceGroupNameParameter": {
-      "name": "resourceGroupName",
-      "in": "path",
-      "description": "The name of the resource group to which the container registry belongs.",
-      "required": true,
-      "type": "string",
-      "x-ms-parameter-location": "method"
-    },
     "ConfigStoreNameParameter": {
       "name": "configStoreName",
       "in": "path",
@@ -2843,13 +3293,6 @@
       "minLength": 5,
       "pattern": "^[a-zA-Z0-9_-]*$",
       "x-ms-parameter-location": "method"
-    },
-    "ApiVersionParameter": {
-      "name": "api-version",
-      "in": "query",
-      "description": "The client API version.",
-      "required": true,
-      "type": "string"
     },
     "LocationParameter": {
       "name": "location",
@@ -2867,6 +3310,14 @@
       "type": "string",
       "pattern": "^[^\\x00-\\x1F\\x7F]+$",
       "x-ms-parameter-location": "method"
+    },
+    "NSPConfigurationNameParameter": {
+      "name": "nspConfigurationName",
+      "in": "path",
+      "description": "The name of the network security perimeter configuration. Takes the format {perimeterGuid}.{associationName}.",
+      "required": true,
+      "type": "string",
+      "pattern": "^.*$"
     }
   },
   "securityDefinitions": {
